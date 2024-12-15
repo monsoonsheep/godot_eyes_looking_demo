@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://dntslr1g1wt3n"]
+
+[ext_resource type="Script" path="res://followeyes.gd" id="1_cwbpy"]
+[ext_resource type="Script" path="res://circle.gd" id="2_arigm"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_cwbpy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 2)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -84.0
+offset_top = -186.0
+offset_right = 85.0
+offset_bottom = -130.0
+text = "Test"
+horizontal_alignment = 1
+
+[node name="eyel" type="Node2D" parent="."]
+position = Vector2(-219, 4)
+script = ExtResource("2_arigm")
+color = Color(1, 1, 1, 1)
+radius = 150
+
+[node name="eyel2" type="Node2D" parent="eyel"]
+script = ExtResource("2_arigm")
+color = Color(0.0562916, 0.0562916, 0.0562916, 1)
+radius = 60
+
+[node name="eyer" type="Node2D" parent="."]
+position = Vector2(219, 4)
+script = ExtResource("2_arigm")
+color = Color(1, 1, 1, 1)
+radius = 150
+
+[node name="eyer2" type="Node2D" parent="eyer"]
+script = ExtResource("2_arigm")
+color = null
+radius = 60

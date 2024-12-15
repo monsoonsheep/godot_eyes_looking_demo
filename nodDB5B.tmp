@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dntslr1g1wt3n"]
+
+[ext_resource type="Script" path="res://followeyes.gd" id="1_ab6nk"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_w88nv"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ab6nk")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(-20, 4.54747e-13)
+scale = Vector2(24.0272, 24.0272)
+mesh = SubResource("SphereMesh_w88nv")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+position = Vector2(21, 2.71051e-20)
+scale = Vector2(24.0272, 24.0272)
+mesh = SubResource("SphereMesh_w88nv")

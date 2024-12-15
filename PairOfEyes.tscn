@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://butf5gp8u4ri6"]
+
+[ext_resource type="Script" path="res://followeyes.gd" id="1_rniqb"]
+[ext_resource type="Texture2D" uid="uid://dbbwsyn16vgnt" path="res://eye.png" id="2_g0o5l"]
+[ext_resource type="Texture2D" uid="uid://ivukfrw4s6fj" path="res://pupil.png" id="3_uxj6a"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_rniqb")
+
+[node name="eye_l" type="Sprite2D" parent="."]
+position = Vector2(-22, 0)
+texture = ExtResource("2_g0o5l")
+
+[node name="pupil" type="Sprite2D" parent="eye_l"]
+position = Vector2(0, 1)
+texture = ExtResource("3_uxj6a")
+
+[node name="eye_r" type="Sprite2D" parent="."]
+position = Vector2(22, 0)
+texture = ExtResource("2_g0o5l")
+flip_h = true
+
+[node name="pupil" type="Sprite2D" parent="eye_r"]
+position = Vector2(0, 1)
+texture = ExtResource("3_uxj6a")
